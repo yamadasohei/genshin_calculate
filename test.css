@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: #F0F8FF;
+  }
+  p {
+    font-size: 15px;
+  }
+  .red {
+    color: #f89174;
+  }
+  .green {
+    color: green;
+  }
+  .blue {
+    color: #0000FF;
+  }
+  .purple {
+    color: purple;
+  }
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+  .solid {
+    border: solid 2px gray;
+  }
+ 

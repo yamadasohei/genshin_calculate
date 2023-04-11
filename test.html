@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>原神計算式</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="test.css">
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="calculate.js"></script>
+</head>
+<body>
+  <div id = "intro">
+    <h1>原神のダメージ計算</h1>
+    <h2>基本的な計算式</h2>
+    <p class = "center"> ダメージ = <span class = "red">技のダメージ</span> × <span class = "green">ダメージバフ</span> × <span class = "yellow">会心ダメージ</span> × <span class = "purple">元素反応</span> × 敵の耐性 </p>
+    <p>厳密には...</p>
+    <p class = "center"> ダメージ = <span class = "solid"><span class = "red">(攻撃力 × 天賦倍率 × 特殊乗算 + 実数ダメージ加算)</span></span> × <span class = "solid"><span class = "green">ダメージバフ補正</span></span> × <span class = "solid"><span class = "yellow">会心補正</span></span> × <span class = "solid"><span class = "purple">元素反応補正</span></span> × 敵の防御補正 × 敵の元素耐性補正 </p>
+    <a href="https://wikiwiki.jp/genshinwiki/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97%E5%BC%8F">原神の計算式wikiへジャンプ</a>
+    <a href="https://genshin.hoyoverse.com/ja">
+    <p><img src="paimon.jpeg" alt="パイモン" /></p>
+    </a>
+  </div>
+  <div id = "input_box">
+    <span class = "red">攻撃力：</span><input type = "number" id = "offense" value = 1000>
+    <span class = "red">特殊乗算：</span><input type = "number" id = "special" value = 0>
+    <span class = "red">実数ダメージ加算：</span><input type = "number" id = "realnumber" value = 0>
+    <span class = "red">天賦倍率：</span><input type = "number" id = "skill" value = 100>
+    <span class = "green">ダメージバフ：</span><input type = "number" id = "damebuff" value = 50>
+    <span class = "blue">会心ダメージ：</span><input type = "number" id = "cribuff" value = 50>
+    <span class = "purple">元素反応倍率：</span><input type = "number" id = "element" value = 1>
+  </div>
+  <div id = "button_box">
+    <p class = "right"><button type="button" class="calbutton">ダメージ計算</button></p>
+  </div>
+  <span>ダメージ：</span>
+  <span id = "output_dam"></span>
+
+  
+</body>
+</html>
